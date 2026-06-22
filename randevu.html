@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Vural | Online Randevu</title>
+  <meta name="description" content="DentCare Clinic online randevu sayfası" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="randevu.html">
+  <header class="site-header">
+    <div class="top-strip">
+      <div class="container top-strip-inner">
+        <p>Acil Dis Destegi: 7/24 Danisma Hatti</p>
+        <a href="tel:+905555550000">+90 555 555 00 00</a>
+      </div>
+    </div>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/images/mustafa-logo.png.png" alt="Dis logosu" /><span class="brand-text"><span>MUSTAFA</span><span>VURAL</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false">Menu</button>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="tedaviler.html">Tedaviler</a></li>
+          <li><a href="ekibimiz.html">Ekibimiz</a></li>
+          <li><a href="randevu.html">Online Randevu</a></li>
+          <li><a href="yorumlar.html">Yorumlar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section id="randevu" class="services-section appointment-page-bg">
+      <div class="container services-wrap">
+        <h1 class="services-title">ONLINE RANDEVU</h1>
+        <p class="section-slogan">Dakikalar icinde randevu talebi olusturun, ekibimiz size hizla donus yapsin.</p>
+
+        <article class="services-info-box">
+          <p>
+            Online randevu panelinden ihtiyac duydugunuz tedavi turunu secerek kolayca talep olusturabilirsiniz.
+            Uygun saat secimi sonrasinda ekibimiz en kisa surede sizinle iletisime gecer.
+          </p>
+        </article>
+
+        <div class="photo-actions" aria-label="Randevu turu secim butonlari">
+          <a class="photo-btn" href="#">
+            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=700&q=80" alt="Genel muayene randevusu" />
+            <span>Genel Muayene Randevusu</span>
+          </a>
+          <a class="photo-btn" href="#">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80" alt="Estetik dis tedavisi randevusu" />
+            <span>Estetik Tedavi Randevusu</span>
+          </a>
+          <a class="photo-btn" href="#">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80" alt="Cocuk dis hekimligi randevusu" />
+            <span>Cocuk Dis Hekimligi</span>
+          </a>
+        </div>
+
+        <section class="services-details" aria-label="Randevu sureci adimlari">
+          <div class="service-card">
+            <h3>1. Tedavi Turunu Secin</h3>
+            <p>Ihtiyaciniza uygun randevu turunu secerek sureci baslatin.</p>
+          </div>
+          <div class="service-card">
+            <h3>2. Saat Talebi Olusturun</h3>
+            <p>Size uygun tarih ve saat araligini belirterek formu tamamlayin.</p>
+          </div>
+          <div class="service-card">
+            <h3>3. Onay Bilgisi Alin</h3>
+            <p>Ekibimiz tarafindan randevu onayi telefon veya mesaj ile iletilir.</p>
+          </div>
+          <div class="service-card">
+            <h3>4. Kliniğe Gelis</h3>
+            <p>Randevu saatinde kliniğe gelerek tedavi surecinizi baslatabilirsiniz.</p>
+          </div>
+        </section>
+
+        <section class="appointment-form-wrap" aria-label="Online randevu formu">
+          <h2>Randevu Talep Formu</h2>
+          <p class="form-note">Form, webhook veya Google Sheets baglantisi icin hazirdir.</p>
+          <form class="appointment-form">
+            <label>Ad Soyad
+              <input type="text" name="adSoyad" placeholder="Ad Soyad" required />
+            </label>
+            <label>Telefon
+              <input type="tel" name="telefon" placeholder="05XX XXX XX XX" required />
+            </label>
+            <label>E-posta
+              <input type="email" name="email" placeholder="ornek@mail.com" />
+            </label>
+            <label>Tedavi Turu
+              <select name="tedavi" required>
+                <option value="">Seciniz</option>
+                <option>Genel Muayene</option>
+                <option>Estetik Dis Tedavisi</option>
+                <option>Cocuk Dis Hekimligi</option>
+                <option>Implant Tedavisi</option>
+              </select>
+            </label>
+            <label>Tarih
+              <input type="date" name="tarih" required />
+            </label>
+            <label>Saat
+              <input type="time" name="saat" required />
+            </label>
+            <label class="full">Notunuz
+              <textarea name="not" rows="4" placeholder="Eklemek istediginiz not..."></textarea>
+            </label>
+            <button type="submit" class="services-btn full">Randevu Talebi Gonder</button>
+            <p class="form-status full" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h3>MUSTAFA VURAL</h3>
+        <p>Modern dis hekimligi yaklasimi ile guvenli ve konforlu tedavi deneyimi.</p>
+      </section>
+      <section>
+        <h4>Hizli Menu</h4>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="tedaviler.html">Tedaviler</a>
+        <a href="randevu.html">Online Randevu</a>
+      </section>
+      <section>
+        <h4>Iletisim</h4>
+        <p>+90 555 555 00 00</p>
+        <p>Atakum / Samsun</p>
+      </section>
+      <section>
+        <h4>Yasal</h4>
+        <a href="kvkk.html">KVKK</a>
+        <a href="hasta-haklari.html">Hasta Haklari</a>
+        <a href="acil-durum.html">Acil Durum Bilgisi</a>
+      </section>
+    </div>
+    <div class="container footer-note">
+      <p>2026 Mustafa Vural Dis Klinigi. Tum haklari saklidir.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.MV_CONFIG = {
+      webhookUrl: "",
+      googleAppsScriptUrl: ""
+    };
+  </script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
+
