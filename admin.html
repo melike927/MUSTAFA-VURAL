@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Vural | Admin Paneli</title>
+  <meta name="description" content="Mustafa Vural dis klinigi icerik yonetim paneli" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="admin-page">
+  <main class="admin-shell">
+    <section class="admin-hero">
+      <p class="admin-eyebrow">Yonetim Paneli</p>
+      <h1>Butun sayfalar tek bir CMS yapisindan yonetilir.</h1>
+      <p>Buradan ana sayfa, hizmetler, tedaviler, ekip, yorumlar, randevu ve yasal sayfalarin icerigini degistirebilirsin.</p>
+    </section>
+
+    <section class="admin-login" id="admin-login-card">
+      <h2>Giris Yap</h2>
+      <form id="admin-login-form">
+        <label>
+          Admin Parolasi
+          <input type="password" name="password" placeholder="Parola" autocomplete="current-password" required />
+        </label>
+        <button type="submit">Panele Gir</button>
+        <p class="status" id="admin-login-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="admin-dashboard" id="admin-dashboard" hidden>
+      <div class="admin-toolbar">
+        <div>
+          <p class="admin-eyebrow">CMS Durumu</p>
+          <h2>Mustafa Vural Icerik Yoneticisi</h2>
+        </div>
+        <button type="button" id="admin-logout">Cikis Yap</button>
+      </div>
+
+      <div class="admin-stats" id="admin-stats"></div>
+      <nav class="admin-tabs" id="admin-tabs" aria-label="Icerik sayfalari"></nav>
+      <div id="admin-editor-root"></div>
+    </section>
+  </main>
+
+  <script>
+    window.MV_CONFIG = {
+      apiUrl: "",
+      contentApiUrl: "/api"
+    };
+  </script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Temsili erkek profil logosu">
+  <defs>
+    <linearGradient id="bgM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf6ff"/>
+      <stop offset="100%" stop-color="#cfe2ff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#bgM)" stroke="#2f82ff" stroke-width="3"/>
+  <circle cx="60" cy="47" r="18" fill="#0a57d8" opacity="0.92"/>
+  <path d="M34 91c0-14 12-24 26-24s26 10 26 24" fill="#0a57d8" opacity="0.92"/>
+  <path d="M42 35c4-9 10-13 18-13 8 0 14 4 18 13l-7 2c-2-5-6-7-11-7-5 0-9 2-11 7z" fill="#6aa8ff"/>
+  <path d="M52 84h16" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+</svg>
