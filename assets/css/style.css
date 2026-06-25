@@ -155,6 +155,218 @@ body.page-leave {
   background-position: center;
 }
 
+.home-section {
+  padding: 3.4rem 0 4.8rem;
+  background:
+    radial-gradient(circle at top left, rgba(13, 81, 201, 0.22), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(10, 63, 157, 0.18), transparent 24%),
+    linear-gradient(180deg, #f6faff 0%, #ffffff 46%, #eef5ff 100%);
+}
+
+.home-shell {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 1.4rem;
+  align-items: stretch;
+}
+
+.home-copy {
+  padding: 1rem 0 0.5rem;
+}
+
+.home-kicker,
+.section-eyebrow,
+.home-panel-tag {
+  margin: 0 0 0.8rem;
+  color: #0a57d8;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+.home-title {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  color: #0f2f66;
+}
+
+.home-summary {
+  margin: 1rem 0 0;
+  max-width: 44rem;
+  font-size: 1.12rem;
+  line-height: 1.75;
+  color: #425d85;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.4rem;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  padding: 0.92rem 1.2rem;
+  border-radius: 0.9rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0a57d8, #093d94);
+  box-shadow: 0 16px 30px rgba(10, 87, 216, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(10, 87, 216, 0.28);
+}
+
+.home-btn.secondary {
+  background: #ffffff;
+  color: #0a3f9d;
+  border: 1px solid #c8d8f4;
+  box-shadow: 0 12px 24px rgba(12, 38, 74, 0.08);
+}
+
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.home-stat {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #d7e5fb;
+  border-radius: 1rem;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 10px 24px rgba(8, 54, 124, 0.06);
+}
+
+.home-stat strong {
+  display: block;
+  font-size: 1.7rem;
+  color: #10356d;
+  margin-bottom: 0.25rem;
+}
+
+.home-stat span {
+  color: #4a6c9e;
+  font-weight: 600;
+}
+
+.home-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.home-panel-card,
+.home-highlight-card,
+.home-feature-card,
+.home-cta {
+  border: 1px solid #d5e1f7;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1.15rem;
+  box-shadow: 0 16px 36px rgba(7, 44, 104, 0.08);
+}
+
+.home-panel-card {
+  padding: 1.35rem;
+}
+
+.home-panel-card h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+  color: #0f2f66;
+  line-height: 1.15;
+}
+
+.home-panel-card p {
+  margin: 0.8rem 0 0;
+  color: #47658e;
+  line-height: 1.65;
+}
+
+.home-highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.home-highlight-card {
+  padding: 1.05rem 1.15rem;
+}
+
+.home-highlight-card h3,
+.home-feature-card h3 {
+  margin: 0 0 0.45rem;
+  color: #163f7a;
+}
+
+.home-highlight-card p,
+.home-feature-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.home-features {
+  display: grid;
+  gap: 1rem;
+}
+
+.section-head {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 760px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  color: #0f2f66;
+  line-height: 1.08;
+}
+
+.home-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-feature-card {
+  padding: 1.2rem;
+}
+
+.home-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.3rem 1.4rem;
+}
+
+.home-cta h2 {
+  margin: 0.2rem 0 0;
+  color: #0f2f66;
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  line-height: 1.12;
+}
+
 .about-wrap {
   display: flex;
   flex-direction: column;
@@ -1057,10 +1269,21 @@ body.page-leave {
   .comparison-grid,
   .appointment-form,
   .about-details,
+  .home-stats,
+  .home-hero,
+  .home-feature-grid,
   .services-details,
   .footer-grid,
   .reviews-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-title {
+    max-width: none;
+  }
+
+  .home-cta {
+    align-items: flex-start;
   }
 }
 
@@ -1070,8 +1293,17 @@ body.page-leave {
   }
 
   .about-section,
+  .home-section,
   .services-section {
     padding-top: 2.4rem;
     padding-bottom: 3.6rem;
+  }
+
+  .home-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .home-btn {
+    width: 100%;
   }
 }

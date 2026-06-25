@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const currentPath = window.location.pathname.split("/").pop() || "index.html";
   const pageKeyMap = {
-    "index.html": "index",
+    "index.html": "home",
+    "about.html": "about",
     "hizmetler.html": "services",
     "tedaviler.html": "treatments",
     "ekibimiz.html": "team",
@@ -169,12 +170,73 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const renderIndex = (content) => {
+  const renderHome = (content) => {
     if (!content) {
       return;
     }
 
-    document.title = "Mustafa Vural | Profesyonel Dis Klinigi";
+    document.title = "Mustafa Vural | Anasayfa";
+    setText(".home-kicker", content.kicker || "");
+    setText(".home-title", content.heroTitle || "");
+    setText(".home-summary", content.summary || "");
+
+    const buttons = document.querySelectorAll(".home-actions .home-btn");
+    buttons.forEach((button, index) => {
+      const data = content.buttons && content.buttons[index];
+      if (!data) {
+        return;
+      }
+
+      button.textContent = data.label || button.textContent;
+      button.setAttribute("href", data.href || "#");
+    });
+
+    const stats = document.querySelectorAll(".home-stats .home-stat");
+    stats.forEach((card, index) => {
+      const data = content.stats && content.stats[index];
+      if (!data) {
+        return;
+      }
+
+      const value = card.querySelector("strong");
+      const label = card.querySelector("span");
+      if (value) value.textContent = data.value || "";
+      if (label) label.textContent = data.label || "";
+    });
+
+    const highlights = document.querySelectorAll(".home-highlight-card");
+    highlights.forEach((card, index) => {
+      const data = content.highlights && content.highlights[index];
+      if (!data) {
+        return;
+      }
+
+      const heading = card.querySelector("h3");
+      const text = card.querySelector("p");
+      if (heading) heading.textContent = data.title || "";
+      if (text) text.textContent = data.text || "";
+    });
+
+    const featureCards = document.querySelectorAll(".home-feature-card");
+    featureCards.forEach((card, index) => {
+      const data = content.featureCards && content.featureCards[index];
+      if (!data) {
+        return;
+      }
+
+      const heading = card.querySelector("h3");
+      const text = card.querySelector("p");
+      if (heading) heading.textContent = data.title || "";
+      if (text) text.textContent = data.text || "";
+    });
+  };
+
+  const renderAbout = (content) => {
+    if (!content) {
+      return;
+    }
+
+    document.title = "Mustafa Vural | Hakkımızda";
     setText(".about-title", content.title || "");
     const aboutHeading = document.querySelector(".about-panel h2");
     if (aboutHeading && content.heroTitle) {
@@ -439,7 +501,8 @@ document.addEventListener("DOMContentLoaded", () => {
     renderSite(siteContent);
 
     const rendererMap = {
-      index: renderIndex,
+      home: renderHome,
+      about: renderAbout,
       services: renderServices,
       treatments: renderTreatments,
       team: renderTeam,

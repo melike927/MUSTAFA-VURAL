@@ -42,6 +42,25 @@ async function ensureWebsiteContentTable() {
         [pageKey, JSON.stringify(content)]
       );
     }
+    return;
+  }
+
+  const [contentRows] = await pool.query('SELECT page_key, content_json FROM website_content');
+  const rowsByKey = new Map(contentRows.map((row) => [row.page_key, row]));
+
+  if (!rowsByKey.has('home')) {
+    await pool.query('INSERT INTO website_content (page_key, content_json) VALUES (?, ?)', ['home', JSON.stringify(DEFAULT_CONTENT.home)]);
+  }
+
+  if (!rowsByKey.has('about')) {
+    const legacyAbout = rowsByKey.get('index') || rowsByKey.get('about');
+    const aboutContent = legacyAbout ? JSON.parse(legacyAbout.content_json) : DEFAULT_CONTENT.about;
+    await pool.query('INSERT INTO website_content (page_key, content_json) VALUES (?, ?) ON DUPLICATE KEY UPDATE content_json = VALUES(content_json)', ['about', JSON.stringify(aboutContent)]);
+  }
+
+  if (rowsByKey.has('patientRights') && !rowsByKey.has('patientrights')) {
+    const legacyPatientRights = JSON.parse(rowsByKey.get('patientRights').content_json);
+    await pool.query('INSERT INTO website_content (page_key, content_json) VALUES (?, ?) ON DUPLICATE KEY UPDATE content_json = VALUES(content_json)', ['patientrights', JSON.stringify(legacyPatientRights)]);
   }
 }
 

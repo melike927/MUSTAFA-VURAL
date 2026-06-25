@@ -2,15 +2,73 @@
   "version": 1,
   "content": {
     "site": {
-      "topStrip": "Acil Diş Desteği: 7/24 Danışma Hattı",
+      "topStrip": "Acil Diş Desteği: 7/24 Danışma",
       "phone": "+90 555 555 00 00",
       "address": "Atakum / Samsun",
-      "email": "iletisim@mustafavuraldis.com",
+      "email": "iletisim@xn--mustafavuraldi-8zc.com",
       "footerTitle": "MUSTAFA VURAL",
-      "footerDescription": "Modern dis hekimligi yaklasimi ile guvenli ve konforlu tedavi deneyimi.",
+      "footerDescription": "Modern diş hekimliği yaklaşımı ile güvenli ve konforlu tedavi deneyimi.",
       "footerYear": "2026 Mustafa Vural Diş Kliniği. Tüm hakları saklıdır."
     },
-    "index": {
+    "home": {
+      "title": "",
+      "kicker": "MODERN DİŞ KLİNİĞİ",
+      "heroTitle": "Gülüşünüzü planlayan profesyonel diş hekimliği deneyimi.",
+      "summary": "Dijital tanı, estetik planlama ve şeffaf iletişim ile size özel bir tedavi deneyimi sunuyoruz.",
+      "buttons": [
+        {
+          "label": "Online Randevu Al",
+          "href": "randevu.html"
+        },
+        {
+          "label": "Hakkımızda",
+          "href": "about.html"
+        }
+      ],
+      "stats": [
+        {
+          "value": "15+",
+          "label": "Yıl Deneyim"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Hasta Memnuniyeti"
+        },
+        {
+          "value": "7/24",
+          "label": "Danışma Hattı"
+        }
+      ],
+      "highlights": [
+        {
+          "title": "Dijital Tanı",
+          "text": "3D görüntüleme ve detaylı planlama ile net kararlar veriyoruz."
+        },
+        {
+          "title": "Kişiye Özel Tedavi",
+          "text": "Her hasta için ayrı ilerleyen, kontrollü ve konforlu süreçler tasarlıyoruz."
+        },
+        {
+          "title": "Konforlu Klinik",
+          "text": "Steril, modern ve güven veren bir klinik deneyimi sunuyoruz."
+        }
+      ],
+      "featureCards": [
+        {
+          "title": "Hızlı Randevu",
+          "text": "Dakikalar içinde form doldurarak uygun tarih için talep oluşturabilirsiniz."
+        },
+        {
+          "title": "Uzman Ekip",
+          "text": "Tedavi planı farklı branşlardan deneyimli hekimlerle birlikte hazırlanır."
+        },
+        {
+          "title": "Acil Destek",
+          "text": "Gerekli durumlarda hızlı iletişim için danışma hattımız aktiftir."
+        }
+      ]
+    },
+    "about": {
       "title": "HAKKIMIZDA",
       "heroTitle": "Mustafa VURAL Kliniğe Hos Geldiniz",
       "paragraphs": [
@@ -67,15 +125,15 @@
       "intro": "Kliniğimizde koruyucu diş hekimliğinden estetik uygulamalara kadar geniş kapsamlı hizmetler sunulmaktadır. Amacımız, her hastamız için doğru tanı, kişiye özel planlama ve uzun vadeli ağız sağlığı sağlamaktır.",
       "cards": [
         {
-          "title": "Genel Dis Muayenesi",
+          "title": "Genel Diş Muayenesi",
           "text": "Düzenli kontrol, erken teşhis ve kişisel ağız bakım planı oluşturma."
         },
         {
-          "title": "Estetik Dis Hekimligi",
+          "title": "Estetik Diş Hekimliği",
           "text": "Gülüş tasarımı, diş beyazlatma ve estetik restorasyon uygulamaları."
         },
         {
-          "title": "Ortodontik Degerlendirme",
+          "title": "Ortodontik Değerlendirme",
           "text": "Diş dizilimi ve çene yapısına yönelik kapsamlı analiz ve yönlendirme."
         },
         {
@@ -89,17 +147,17 @@
           "answer": "Ortalama 20-30 dakika surer ve tum agiz ici durum detayli olarak degerlendirilir."
         },
         {
-          "question": "Dis beyazlatma islemi zararli midir?",
-          "answer": "Uzman hekim kontrolunde yapildiginda dis yapisina uygun ve guvenli bir uygulamadir."
+          "question": "Diş beyazlatma islemi zararli midir?",
+          "answer": "Uzman hekim kontrolunde yapildiginda diş yapisina uygun ve guvenli bir uygulamadir."
         },
         {
           "question": "Cocuklar ne zaman ilk kontrola gelmeli?",
-          "answer": "Ilk dis ciktiktan sonra veya en gec 1 yas civarinda ilk muayene onerilir."
+          "answer": "Ilk diş ciktiktan sonra veya en gec 1 yas civarinda ilk muayene onerilir."
         }
       ]
     },
     "treatments": {
-      "title": "TEDAVILER",
+      "title": "TEDAVİLER",
       "slogan": "Her tedavi oncesi planlama, uygulama ve kontrol adimlariyla kalici sonuc odakli ilerliyoruz.",
       "intro": "Tedavilerimiz; detayli muayene, dijital planlama ve uzun vadeli takip adimlariyla uygulanir. Her hasta icin en uygun yontemi belirleyerek hem estetik hem de fonksiyonel sonuc hedefleriz.",
       "cards": [
@@ -125,7 +183,7 @@
       "comparisons": [
         {
           "title": "Oncesi",
-          "text": "Renklenme, eksik dis veya caprasiklik gibi sorunlar detayli analiz edilir."
+          "text": "Renklenme, eksik diş veya caprasiklik gibi sorunlar detayli analiz edilir."
         },
         {
           "title": "Sonrasi",
@@ -134,8 +192,8 @@
       ]
     },
     "team": {
-      "title": "EKIBIMIZ",
-      "slogan": "Uzmanlik, deneyim ve hasta odakli iletisim prensibi ile calisan profesyonel ekip.",
+      "title": "EKİBİMİZ",
+      "slogan": "Uzmanlık, deneyim ve hasta odakli iletisim prensibi ile calisan profesyonel ekip.",
       "intro": "Ekibimiz, farkli uzmanlik alanlarinda deneyimli dis hekimlerinden olusur. Her hastaya ozel yaklasimla, guvenilir tedavi ve surekli bilgilendirme sunariz.",
       "cards": [
         {
@@ -207,9 +265,9 @@
           "alt": "Estetik dis tedavisi randevusu"
         },
         {
-          "title": "Cocuk Dis Hekimligi",
+          "title": "Cocuk Diş Hekimligi",
           "image": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80",
-          "alt": "Cocuk dis hekimligi randevusu"
+          "alt": "Cocuk diş hekimligi randevusu"
         }
       ],
       "steps": [
@@ -240,27 +298,27 @@
     },
     "kvkk": {
       "title": "KVKK",
-      "intro": "Kisisel verileriniz, 6698 sayili Kisisel Verilerin Korunmasi Kanunu kapsaminda sadece saglik hizmeti sunumu, randevu yonetimi ve yasal yukumluluklerin yerine getirilmesi amaciyla islenmektedir.",
+      "intro": "Kişisel verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsaminda sadece sağlık hizmeti sunumu, randevu yönetimi ve yasal yükümlülüklerin yerine getirilmesi amaciyla islenmektedir.",
       "cards": [
         {
-          "title": "Islenen Veriler",
-          "text": "Kimlik, iletisim, saglik ve randevu bilgileri."
+          "title": "İşlenen Veriler",
+          "text": "Kimlik, iletisim, sağlık ve randevu bilgileri."
         },
         {
-          "title": "Isleme Amaci",
-          "text": "Tani, tedavi, takip ve iletisim sureclerinin yurutilmesi."
+          "title": "İşleme Amacı",
+          "text": "Tanı, tedavi, takip ve iletisim sureclerinin yurutilmesi."
         },
         {
-          "title": "Haklariniz",
+          "title": "Haklarınız",
           "text": "Bilgi talep etme, duzeltme, silme ve itiraz haklarina sahipsiniz."
         },
         {
-          "title": "Basvuru",
+          "title": "Başvuru",
           "text": "kvkk@mustafavuraldis.com adresinden bize ulasabilirsiniz."
         }
       ]
     },
-    "patientRights": {
+    "patientrights": {
       "title": "HASTA HAKLARI",
       "intro": "Her hastamiz, bilgilendirilme, mahremiyet, guvenli tedavi, onam verme ve tedavi surecine aktif katilim haklarina sahiptir.",
       "cards": [

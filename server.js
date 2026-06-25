@@ -56,6 +56,14 @@ function normalizeDbState(rawState) {
         baseState.content[pageKey] = rawState.content[pageKey];
       }
     }
+
+    if (rawState.content.index && !rawState.content.about) {
+      baseState.content.about = rawState.content.index;
+    }
+
+    if (rawState.content.patientRights && !rawState.content.patientrights) {
+      baseState.content.patientrights = rawState.content.patientRights;
+    }
   }
 
   if (Array.isArray(rawState.appointments)) {

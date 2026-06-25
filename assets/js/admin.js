@@ -32,10 +32,60 @@ document.addEventListener("DOMContentLoaded", () => {
       repeaters: [],
     },
     {
-      pageKey: "index",
+      pageKey: "home",
       label: "Anasayfa",
       badge: "Home",
-      description: "Hakkimizda ve ana iletişim alanlari.",
+      description: "Giris alanı, hero metni ve öne çıkan kutular.",
+      fields: [
+        { name: "title", label: "Büyük Baslik", type: "text" },
+        { name: "kicker", label: "Üst Etiket", type: "text" },
+        { name: "heroTitle", label: "Hero Basligi", type: "text" },
+        { name: "summary", label: "Kısa Açıklama", type: "textarea" },
+      ],
+      repeaters: [
+        {
+          name: "buttons",
+          label: "Hero Butonlari",
+          itemLabel: "Buton",
+          fields: [
+            { name: "label", label: "Etiket", type: "text" },
+            { name: "href", label: "Link", type: "text" },
+          ],
+        },
+        {
+          name: "stats",
+          label: "Istatistik Kartlari",
+          itemLabel: "Kart",
+          fields: [
+            { name: "value", label: "Deger", type: "text" },
+            { name: "label", label: "Aciklama", type: "text" },
+          ],
+        },
+        {
+          name: "highlights",
+          label: "Vurgu Kartlari",
+          itemLabel: "Kart",
+          fields: [
+            { name: "title", label: "Baslik", type: "text" },
+            { name: "text", label: "Metin", type: "textarea" },
+          ],
+        },
+        {
+          name: "featureCards",
+          label: "One Cikan Ozellikler",
+          itemLabel: "Kart",
+          fields: [
+            { name: "title", label: "Baslik", type: "text" },
+            { name: "text", label: "Metin", type: "textarea" },
+          ],
+        },
+      ],
+    },
+    {
+      pageKey: "about",
+      label: "Hakkımızda",
+      badge: "About",
+      description: "Klinik tanıtımı, hizmet odakları ve iletişim alanları.",
       fields: [
         { name: "title", label: "Büyük Baslik", type: "text" },
         { name: "heroTitle", label: "Karsilama Basligi", type: "text" },

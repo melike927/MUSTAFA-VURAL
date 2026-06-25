@@ -1,6 +1,6 @@
 import { kv } from "@vercel/kv";
-import { verifyToken, sendError, sendJson } from "../../auth.js";
-import { isSupportedContentPage } from "../../../content-data.js";
+import { verifyToken, sendError, sendJson } from "../auth.js";
+import { getDefaultContent, isSupportedContentPage } from "../../content-data.js";
 
 export default async function handler(req, res) {
   const { pageKey } = req.query;
@@ -9,17 +9,20 @@ export default async function handler(req, res) {
     return sendError(res, 400, "Page key gerekli");
   }
 
+  if (!isSupportedContentPage(pageKey)) {
+    return sendError(res, 404, "Desteklenmeyen sayfa");
+  }
+
   if (req.method === "GET") {
     try {
-      const token = String(req.headers.authorization || "").slice(7).trim();
-      const isAdmin = await verifyToken(token);
-      
       const raw = await kv.get(`content:${pageKey}`);
-      if (!raw) {
+      const content = raw ? JSON.parse(raw) : getDefaultContent(pageKey);
+
+      if (!content) {
         return sendError(res, 404, "Icerik bulunamadi");
       }
       
-      return sendJson(res, JSON.parse(raw));
+      return sendJson(res, content);
     } catch (error) {
       return sendError(res, 500, "Icerik yuklemesi basarisiz");
     }
@@ -29,10 +32,6 @@ export default async function handler(req, res) {
     const token = String(req.headers.authorization || "").slice(7).trim();
     if (!(await verifyToken(token))) {
       return sendError(res, 401, "Yetkisiz erisim");
-    }
-
-    if (!isSupportedContentPage(pageKey)) {
-      return sendError(res, 404, "Desteklenmeyen sayfa");
     }
 
     const content = req.body;

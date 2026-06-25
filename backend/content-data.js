@@ -7,30 +7,56 @@ const DEFAULT_CONTENT = {
     footerTitle: "MUSTAFA VURAL",
     footerDescription: "Modern dis hekimligi yaklasimi ile guvenli ve konforlu tedavi deneyimi.",
     footerYear: "2026 Mustafa Vural Dis Klinigi. Tum haklari saklidir.",
+  home: {
+    title: "ANASAYFA",
+    kicker: "MODERN DIS KLINIGI",
+    heroTitle: "Gülüşünüzü planlayan profesyonel diş hekimliği deneyimi.",
+    summary:
+      "Dijital tanı, estetik planlama ve şeffaf iletişim ile size özel bir tedavi deneyimi sunuyoruz.",
+    buttons: [
+      { label: "Online Randevu Al", href: "randevu.html" },
+      { label: "Hakkımızda", href: "about.html" },
+    ],
+    stats: [
+      { value: "15+", label: "Yıl Deneyim" },
+      { value: "4.9/5", label: "Hasta Memnuniyeti" },
+      { value: "7/24", label: "Danışma Hattı" },
+    ],
+    highlights: [
+      { title: "Dijital Tanı", text: "3D görüntüleme ve detaylı planlama ile net kararlar veriyoruz." },
+      { title: "Kişiye Özel Tedavi", text: "Her hasta için ayrı ilerleyen, kontrollü ve konforlu süreçler tasarlıyoruz." },
+      { title: "Konforlu Klinik", text: "Steril, modern ve güven veren bir klinik deneyimi sunuyoruz." },
+    ],
+    featureCards: [
+      { title: "Hızlı Randevu", text: "Dakikalar içinde form doldurarak uygun tarih için talep oluşturabilirsiniz." },
+      { title: "Uzman Ekip", text: "Tedavi planı farklı branşlardan deneyimli hekimlerle birlikte hazırlanır." },
+      { title: "Acil Destek", text: "Gerekli durumlarda hızlı iletişim için danışma hattımız aktiftir." },
+    ],
   },
-  index: {
+  about: {
     title: "HAKKIMIZDA",
-    heroTitle: "Mustafa VURAL Kliniğe Hos Geldiniz",
+    heroTitle: "Mustafa VURAL Kliniğe Hoş Geldiniz",
     paragraphs: [
       "DentCare Clinic olarak hastalarımıza güven, hijyen ve yüksek tedavi kalitesi sunmayı temel ilke edindik.",
       "Ekibimiz, estetik ve fonksiyonel ağız sağlığını birlikte ele alır. Her tedavi planını kişiye özel hazırlayarak doğal, sağlıklı ve uzun ömürlü gülüşler hedefleriz.",
     ],
     detailCards: [
-      { title: "Calisma Saatleri", text: "Pazartesi - Cumartesi: 09:00 - 19:00" },
-      { title: "Uzman Yaklasim", text: "Alanında deneyimli diş hekimleri ile kişiye özel tedavi planlaması." },
+      { title: "Çalışma Saatleri", text: "Pazartesi - Cumartesi: 09:00 - 19:00" },
+      { title: "Uzman Yaklaşım", text: "Alanında deneyimli diş hekimleri ile kişiye özel tedavi planlaması." },
       { title: "Hasta Konforu", text: "Modern klinik altyapısı, steril ortam ve şeffaf bilgilendirme süreçleri." },
     ],
     buttons: [
       { label: "Online Randevu", href: "randevu.html" },
-      { label: "Hizmetlerimizi Gor", href: "hizmetler.html" },
-      { label: "Bize Ulasin", href: "#iletisim" },
+      { label: "Hizmetlerimizi Gör", href: "hizmetler.html" },
+      { label: "Bize Ulaşın", href: "#iletisim" },
     ],
     contactCards: [
       { title: "Adres", text: "Atakum, Samsun" },
       { title: "Telefon", text: "+90 555 555 00 00" },
       { title: "E-posta", text: "iletisim@mustafavuraldis.com" },
     ],
-    mapUrl: "https://maps.google.com/maps?q=Samsun%20Atakum&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    mapUrl: "https://maps.google.com/maps?q=Samsun%20Atakum&t=&z=13&ieUTF8&iwloc=&output=embed",
+  },
   },
   services: {
     title: "HIZMETLER",
@@ -114,7 +140,7 @@ const DEFAULT_CONTENT = {
       { title: "Basvuru", text: "kvkk@mustafavuraldis.com adresinden bize ulasabilirsiniz." },
     ],
   },
-  patientRights: {
+  patientrights: {
     title: "HASTA HAKLARI",
     intro: "Her hastamiz, bilgilendirilme, mahremiyet, guvenli tedavi, onam verme ve tedavi surecine aktif katilim haklarina sahiptir.",
     cards: [
