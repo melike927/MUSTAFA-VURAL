@@ -71,23 +71,23 @@ const DEFAULT_CONTENT = {
     ],
     faqs: [
       { question: "İlk muayene ne kadar sürer?", answer: "Ortalama 20-30 dakika sürer ve tüm ağız içi durum detaylı olarak değerlendirilir." },
-      { question: "Dis beyazlatma islemi zararli midir?", answer: "Uzman hekim kontrolunde yapildiginda dis yapisina uygun ve guvenli bir uygulamadir." },
-      { question: "Cocuklar ne zaman ilk kontrola gelmeli?", answer: "Ilk dis ciktiktan sonra veya en gec 1 yas civarinda ilk muayene onerilir." },
+      { question: "Diş beyazlatma işlemi zararlı mıdır?", answer: "Uzman hekim kontrolünde yapıldığında diş yapısına uygun ve güvenli bir uygulamadır." },
+      { question: "Çocuklar ne zaman ilk kontrole gelmeli?", answer: "İlk diş çıktıktan sonra veya en geç 1 yaş civarında ilk muayene önerilir." },
     ],
   },
   treatments: {
     title: "TEDAVILER",
-    slogan: "Her tedavi oncesi planlama, uygulama ve kontrol adimlariyla kalici sonuc odakli ilerliyoruz.",
+    slogan: "Her tedavi öncesi planlama, uygulama ve kontrol adımlarıyla kalıcı sonuç odaklı ilerliyoruz.",
     intro:
-      "Tedavilerimiz; detayli muayene, dijital planlama ve uzun vadeli takip adimlariyla uygulanir. Her hasta icin en uygun yontemi belirleyerek hem estetik hem de fonksiyonel sonuc hedefleriz.",
+      "Tedavilerimiz; detaylı muayene, dijital planlama ve uzun vadeli takip adımlarıyla uygulanır. Her hasta için en uygun yöntemi belirleyerek hem estetik hem de fonksiyonel sonuç hedefleriz.",
     cards: [
       { title: "Implant Tedavisi", text: "Eksik diş bölgeleri için kalıcı ve fonksiyonel çözümler.", image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80", alt: "Dis implant tedavisi" },
-      { title: "Dis Beyazlatma", text: "Daha aydınlık bir gülüş için kontrollü estetik uygulamalar.", image: "https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=700&q=80", alt: "Dis beyazlatma tedavisi" },
+      { title: "Diş Beyazlatma", text: "Daha aydınlık bir gülüş için kontrollü estetik uygulamalar.", image: "https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=700&q=80", alt: "Diş beyazlatma tedavisi" },
       { title: "Ortodontik Tedavi", text: "Diş dizilimini düzenleyen planlı ve takipli tedavi yaklaşımı.", image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=700&q=80", alt: "Ortodonti tedavisi" },
     ],
     comparisons: [
-      { title: "Oncesi", text: "Renklenme, eksik dis veya caprasiklik gibi sorunlar detayli analiz edilir." },
-      { title: "Sonrasi", text: "Fonksiyonel cigneme, estetik gulus ve uzun sureli korunabilir bir sonuc hedeflenir." },
+      { title: "Öncesi", text: "Renklenme, eksik diş veya çapraşıklık gibi sorunlar detaylı analiz edilir." },
+      { title: "Sonrası", text: "Fonksiyonel çiğneme, estetik gülüş ve uzun süreli korunabilir bir sonuç hedeflenir." },
     ],
   },
   team: {
@@ -95,10 +95,10 @@ const DEFAULT_CONTENT = {
     slogan: "Uzmanlik, deneyim ve hasta odakli iletisim prensibi ile calisan profesyonel ekip.",
     intro: "Ekibimiz, farkli uzmanlik alanlarinda deneyimli dis hekimlerinden olusur. Her hastaya ozel yaklasimla, guvenilir tedavi ve surekli bilgilendirme sunariz.",
     cards: [
-      { title: "Dt. Elif Kara", text: "Estetik dis hekimligi ve gulus tasarimi alaninda uzmanlasmistir. 12+ yil deneyim." },
-      { title: "Dt. Mert Yildiz", text: "Implantoloji ve cerrahi planlama sureclerinde gorev almaktadir. Uluslararasi sertifikalara sahiptir." },
-      { title: "Dt. Zeynep Arin", text: "Pedodonti ve koruyucu dis hekimligi uygulamalarinda deneyimlidir. Cocuk hasta iletisiminde uzmandir." },
-      { title: "Uzm. Hekim Asistani", text: "Hasta koordinasyonu, randevu takibi ve tedavi sureci bilgilendirmelerinde aktif destek saglar." },
+      { title: "Dt. Elif Kara", text: "Estetik diş hekimliği ve gülüş tasarımı alanında uzmanlaşmıştır. 12+ yıl deneyim." },
+      { title: "Dt. Mert Yıldız", text: "İmplantoloji ve cerrahi planlama süreçlerinde görev almaktadır. Uluslararası sertifikalara sahiptir." },
+      { title: "Dt. Zeynep Arın", text: "Pedodonti ve koruyucu diş hekimliği uygulamalarında deneyimlidir. Çocuk hasta iletişiminde uzmandır." },
+      { title: "Uzm. Hekim Asistanı", text: "Hasta koordinasyonu, randevu takibi ve tedavi süreci bilgilendirmelerinde aktif destek sağlar." },
     ],
   },
   reviews: {

@@ -87,8 +87,8 @@ const DEFAULT_CONTENT = {
         answer: "Ortalama 20-30 dakika sürer ve tüm ağız içi durum detaylı olarak değerlendirilir.",
       },
       {
-        question: "Dis beyazlatma islemi zararli midir?",
-        answer: "Uzman hekim kontrolunde yapildiginda dis yapisina uygun ve guvenli bir uygulamadir.",
+        question: "Diş beyazlatma işlemi zararlı mıdır?",
+        answer: "Uzman hekim kontrolünde yapıldığında diş yapısına uygun ve güvenli bir uygulamadır.",
       },
       {
         question: "Çocuklar ne zaman ilk kontrole gelmeli?",
@@ -98,9 +98,9 @@ const DEFAULT_CONTENT = {
   },
   treatments: {
     title: "TEDAVILER",
-    slogan: "Her tedavi oncesi planlama, uygulama ve kontrol adimlariyla kalici sonuc odakli ilerliyoruz.",
+    slogan: "Her tedavi öncesi planlama, uygulama ve kontrol adımlarıyla kalıcı sonuç odaklı ilerliyoruz.",
     intro:
-      "Tedavilerimiz; detayli muayene, dijital planlama ve uzun vadeli takip adimlariyla uygulanir. Her hasta icin en uygun yontemi belirleyerek hem estetik hem de fonksiyonel sonuc hedefleriz.",
+      "Tedavilerimiz; detaylı muayene, dijital planlama ve uzun vadeli takip adımlarıyla uygulanır. Her hasta için en uygun yöntemi belirleyerek hem estetik hem de fonksiyonel sonuç hedefleriz.",
     cards: [
       {
         title: "Implant Tedavisi",
@@ -110,11 +110,11 @@ const DEFAULT_CONTENT = {
         alt: "Dis implant tedavisi",
       },
       {
-        title: "Dis Beyazlatma",
+        title: "Diş Beyazlatma",
         text: "Daha aydınlık bir gülüş için kontrollü estetik uygulamalar.",
         image:
           "https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=700&q=80",
-        alt: "Dis beyazlatma tedavisi",
+        alt: "Diş beyazlatma tedavisi",
       },
       {
         title: "Ortodontik Tedavi",
@@ -126,72 +126,72 @@ const DEFAULT_CONTENT = {
     ],
     comparisons: [
       {
-        title: "Oncesi",
-        text: "Renklenme, eksik dis veya caprasiklik gibi sorunlar detayli analiz edilir.",
+        title: "Öncesi",
+        text: "Renklenme, eksik diş veya çapraşıklık gibi sorunlar detaylı analiz edilir.",
       },
       {
-        title: "Sonrasi",
-        text: "Fonksiyonel cigneme, estetik gulus ve uzun sureli korunabilir bir sonuc hedeflenir.",
+        title: "Sonrası",
+        text: "Fonksiyonel çiğneme, estetik gülüş ve uzun süreli korunabilir bir sonuç hedeflenir.",
       },
     ],
   },
   team: {
     title: "EKIBIMIZ",
-    slogan: "Uzmanlik, deneyim ve hasta odakli iletisim prensibi ile calisan profesyonel ekip.",
+    slogan: "Uzmanlık, deneyim ve hasta odaklı iletişim prensibi ile çalışan profesyonel ekip.",
     intro:
-      "Ekibimiz, farkli uzmanlik alanlarinda deneyimli dis hekimlerinden olusur. Her hastaya ozel yaklasimla, guvenilir tedavi ve surekli bilgilendirme sunariz.",
+      "Ekibimiz, farklı uzmanlık alanlarında deneyimli diş hekimlerinden oluşur. Her hastaya özel yaklaşımla, güvenilir tedavi ve sürekli bilgilendirme sunarız.",
     cards: [
       {
         title: "Dt. Elif Kara",
-        text: "Estetik dis hekimligi ve gulus tasarimi alaninda uzmanlasmistir. 12+ yil deneyim.",
+        text: "Estetik diş hekimliği ve gülüş tasarımı alanında uzmanlaşmıştır. 12+ yıl deneyim.",
       },
       {
-        title: "Dt. Mert Yildiz",
-        text: "Implantoloji ve cerrahi planlama sureclerinde gorev almaktadir. Uluslararasi sertifikalara sahiptir.",
+        title: "Dt. Mert Yıldız",
+        text: "İmplantoloji ve cerrahi planlama süreçlerinde görev almaktadır. Uluslararası sertifikalara sahiptir.",
       },
       {
-        title: "Dt. Zeynep Arin",
-        text: "Pedodonti ve koruyucu dis hekimligi uygulamalarinda deneyimlidir. Cocuk hasta iletisiminde uzmandir.",
+        title: "Dt. Zeynep Arın",
+        text: "Pedodonti ve koruyucu diş hekimliği uygulamalarında deneyimlidir. Çocuk hasta iletişiminde uzmandır.",
       },
       {
-        title: "Uzm. Hekim Asistani",
-        text: "Hasta koordinasyonu, randevu takibi ve tedavi sureci bilgilendirmelerinde aktif destek saglar.",
+        title: "Uzm. Hekim Asistanı",
+        text: "Hasta koordinasyonu, randevu takibi ve tedavi süreci bilgilendirmelerinde aktif destek sağlar.",
       },
     ],
   },
   reviews: {
     title: "YORUMLAR",
-    slogan: "Gercek hasta deneyimlerine dayali geri bildirimler ile surekli gelisim odakli yaklasim.",
+    slogan: "Gerçek hasta deneyimlerine dayalı geri bildirimler ile sürekli gelişim odaklı yaklaşım.",
     intro:
-      "Hasta memnuniyeti bizim icin en onemli gostergedir. Asagidaki yorumlar, klinigimizde tedavi olan danisanlarimizin deneyimlerinden secilmis orneklerdir.",
+      "Hasta memnuniyeti bizim için en önemli göstergedir. Aşağıdaki yorumlar, kliniğimizde tedavi olan danışanlarımızın deneyimlerinden seçilmiş örneklerdir.",
     cards: [
       {
         name: "Ayse K.",
         rating: "5/5",
-        meta: "★★★★★ | Dogrulanmis Hasta | 02.03.2026",
+        meta: "★★★★★ | Doğrulanmış Hasta | 02.03.2026",
         avatar: "assets/images/female-profile-logo.svg",
-        text: "Ilk muayeneden itibaren cok acik bilgilendirildim. Tedavi sureci planli ve rahat gecti.",
+        text: "İlk muayeneden itibaren çok açık bilgilendirildim. Tedavi süreci planlı ve rahat geçti.",
       },
       {
         name: "Mehmet T.",
         rating: "5/5",
-        meta: "★★★★★ | Dogrulanmis Hasta | 17.02.2026",
+        meta: "★★★★★ | Doğrulanmış Hasta | 17.02.2026",
         avatar: "assets/images/male-profile-logo.svg",
-        text: "Implant tedavimde ekip son derece ilgiliydi. Hijyen ve ilgi konusunda gercekten cok iyiler.",
+        text: "İmplant tedavimde ekip son derece ilgiliydi. Hijyen ve ilgi konusunda gerçekten çok iyiler.",
       },
       {
         name: "Selin D.",
         rating: "4.9/5",
-        meta: "★★★★☆ | Dogrulanmis Hasta | 29.01.2026",
+        meta: "★★★★☆ | Doğrulanmış Hasta | 29.01.2026",
         avatar: "assets/images/female-profile-logo.svg",
-        text: "Cocuk dis hekimligi randevusunda kizim cok rahatti. Hekimlerin iletisimi cok basariliydi.",
+        text: "Çocuk diş hekimliği randevusunda kızım çok rahatıydı. Hekimlerin iletişimi çok başarılıydı.",
       },
       {
         name: "Emre Y.",
         rating: "5/5",
-        meta: "★★★★★ | Dogrulanmis Hasta | 12.01.2026",
+        meta: "★★★★★ | Doğrulanmış Hasta | 12.01.2026",
         avatar: "assets/images/male-profile-logo.svg",
-        text: "Randevu planlama hizliydi, islemler zamaninda basladi. Gulus tasarimi sonucumdan memnunum.",
+        text: "Randevu planlama hızlıydı, işlemler zamanında başladı. Gülüş tasarımı sonucumdan memnunum.",
       },
     ],
   },
