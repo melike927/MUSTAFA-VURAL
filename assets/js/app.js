@@ -124,6 +124,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  window.addEventListener("pageshow", () => {
+    body.classList.remove("page-leave");
+    body.classList.add("page-enter");
+  });
+
   const renderSite = (site) => {
     if (!site) {
       return;
@@ -316,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const faq = document.querySelector(".faq-block");
     if (faq && Array.isArray(content.faqs)) {
       faq.innerHTML = `
-        <h2>Sik Sorulan Sorular</h2>
+        <h2>${safeHtml(content.faqTitle || "Sık Sorulan Sorular")}</h2>
         ${content.faqs
           .map(
             (item) => `

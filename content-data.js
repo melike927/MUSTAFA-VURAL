@@ -1,16 +1,16 @@
 const DEFAULT_CONTENT = {
   site: {
-    topStrip: "Acil Dis Destegi: 7/24 Danisma Hatti",
+    topStrip: "Acil Dış Desteği: 7/24 Danışma Hattı",
     phone: "+90 555 555 00 00",
     address: "Atakum / Samsun",
     email: "iletisim@mustafavuraldis.com",
     footerTitle: "MUSTAFA VURAL",
-    footerDescription: "Modern dis hekimligi yaklasimi ile guvenli ve konforlu tedavi deneyimi.",
-    footerYear: "2026 Mustafa Vural Dis Klinigi. Tum haklari saklidir.",
+    footerDescription: "Modern diş hekimliği yaklaşımı ile güvenli ve konforlu tedavi deneyimi.",
+    footerYear: "2026 Mustafa Vural Diş Kliniği. Tüm hakları saklıdır.",
   },
   home: {
     title: "ANASAYFA",
-    kicker: "MODERN DIS KLINIGI",
+    kicker: "MODERN DİŞ KLİNİĞİ",
     heroTitle: "Gülüşünüzü planlayan profesyonel diş hekimliği deneyimi.",
     summary:
       "Dijital tanı, estetik planlama ve şeffaf iletişim ile size özel bir tedavi deneyimi sunuyoruz.",
@@ -59,21 +59,22 @@ const DEFAULT_CONTENT = {
     mapUrl: "https://maps.google.com/maps?q=Samsun%20Atakum&t=&z=13&ie=UTF8&iwloc=&output=embed",
   },
   services: {
-    title: "HIZMETLER",
+    title: "HİZMETLER",
     slogan: "Koruyucu, estetik ve uzmanlık odaklı tüm diş hekimliği hizmetleri tek merkezde.",
+    faqTitle: "Sık Sorulan Sorular",
     intro:
       "Kliniğimizde koruyucu diş hekimliğinden estetik uygulamalara kadar geniş kapsamlı hizmetler sunulmaktadır. Amacımız, her hastamız için doğru tanı, kişiye özel planlama ve uzun vadeli ağız sağlığı sağlamaktır.",
     cards: [
       {
-        title: "Genel Dis Muayenesi",
+        title: "Genel Diş Muayenesi",
         text: "Düzenli kontrol, erken teşhis ve kişisel ağız bakım planı oluşturma.",
       },
       {
-        title: "Estetik Dis Hekimligi",
+        title: "Estetik Diş Hekimliği",
         text: "Gülüş tasarımı, diş beyazlatma ve estetik restorasyon uygulamaları.",
       },
       {
-        title: "Ortodontik Degerlendirme",
+        title: "Ortodontik Değerlendirme",
         text: "Diş dizilimi ve çene yapısına yönelik kapsamlı analiz ve yönlendirme.",
       },
       {
@@ -97,17 +98,17 @@ const DEFAULT_CONTENT = {
     ],
   },
   treatments: {
-    title: "TEDAVILER",
+    title: "TEDAVİLER",
     slogan: "Her tedavi öncesi planlama, uygulama ve kontrol adımlarıyla kalıcı sonuç odaklı ilerliyoruz.",
     intro:
       "Tedavilerimiz; detaylı muayene, dijital planlama ve uzun vadeli takip adımlarıyla uygulanır. Her hasta için en uygun yöntemi belirleyerek hem estetik hem de fonksiyonel sonuç hedefleriz.",
     cards: [
       {
-        title: "Implant Tedavisi",
+        title: "İmplant Tedavisi",
         text: "Eksik diş bölgeleri için kalıcı ve fonksiyonel çözümler.",
         image:
           "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80",
-        alt: "Dis implant tedavisi",
+        alt: "Diş implant tedavisi",
       },
       {
         title: "Diş Beyazlatma",
@@ -136,7 +137,7 @@ const DEFAULT_CONTENT = {
     ],
   },
   team: {
-    title: "EKIBIMIZ",
+    title: "EKİBİMİZ",
     slogan: "Uzmanlık, deneyim ve hasta odaklı iletişim prensibi ile çalışan profesyonel ekip.",
     intro:
       "Ekibimiz, farklı uzmanlık alanlarında deneyimli diş hekimlerinden oluşur. Her hastaya özel yaklaşımla, güvenilir tedavi ve sürekli bilgilendirme sunarız.",
@@ -166,7 +167,7 @@ const DEFAULT_CONTENT = {
       "Hasta memnuniyeti bizim için en önemli göstergedir. Aşağıdaki yorumlar, kliniğimizde tedavi olan danışanlarımızın deneyimlerinden seçilmiş örneklerdir.",
     cards: [
       {
-        name: "Ayse K.",
+        name: "Ayşe K.",
         rating: "5/5",
         meta: "★★★★★ | Doğrulanmış Hasta | 02.03.2026",
         avatar: "assets/images/female-profile-logo.svg",
@@ -184,7 +185,7 @@ const DEFAULT_CONTENT = {
         rating: "4.9/5",
         meta: "★★★★☆ | Doğrulanmış Hasta | 29.01.2026",
         avatar: "assets/images/female-profile-logo.svg",
-        text: "Çocuk diş hekimliği randevusunda kızım çok rahatıydı. Hekimlerin iletişimi çok başarılıydı.",
+        text: "Çocuk diş hekimliği randevusunda kızım çok rahattı. Hekimlerin iletişimi çok başarılıydı.",
       },
       {
         name: "Emre Y.",
@@ -197,9 +198,9 @@ const DEFAULT_CONTENT = {
   },
   appointment: {
     title: "ONLINE RANDEVU",
-    slogan: "Dakikalar icinde randevu talebi olusturun, ekibimiz size hizla donus yapsin.",
+    slogan: "Dakikalar içinde randevu talebi oluşturun, ekibimiz size hızla dönüş yapsın.",
     intro:
-      "Online randevu panelinden ihtiyac duydugunuz tedavi turunu secerek kolayca talep olusturabilirsiniz. Uygun saat secimi sonrasinda ekibimiz en kisa surede sizinle iletisime gecer.",
+      "Online randevu panelinden ihtiyaç duyduğunuz tedavi türünü seçerek kolayca talep oluşturabilirsiniz. Uygun saat seçimi sonrasında ekibimiz en kısa sürede sizinle iletişime geçer.",
     quickCards: [
       {
         title: "Genel Muayene Randevusu",
@@ -209,71 +210,71 @@ const DEFAULT_CONTENT = {
       {
         title: "Estetik Tedavi Randevusu",
         image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80",
-        alt: "Estetik dis tedavisi randevusu",
+        alt: "Estetik diş tedavisi randevusu",
       },
       {
-        title: "Cocuk Dis Hekimligi",
+        title: "Çocuk Diş Hekimliği",
         image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80",
-        alt: "Cocuk dis hekimligi randevusu",
+        alt: "Çocuk diş hekimliği randevusu",
       },
     ],
     steps: [
       {
-        title: "1. Tedavi Turunu Secin",
-        text: "Ihtiyaciniza uygun randevu turunu secerek sureci baslatin.",
+        title: "1. Tedavi Türünü Seçin",
+        text: "İhtiyacınıza uygun randevu türünü seçerek süreci başlatın.",
       },
       {
-        title: "2. Saat Talebi Olusturun",
-        text: "Size uygun tarih ve saat araligini belirterek formu tamamlayin.",
+        title: "2. Saat Talebi Oluşturun",
+        text: "Size uygun tarih ve saat aralığını belirterek formu tamamlayın.",
       },
       {
-        title: "3. Onay Bilgisi Alin",
-        text: "Ekibimiz tarafindan randevu onayi telefon veya mesaj ile iletilir.",
+        title: "3. Onay Bilgisi Alın",
+        text: "Ekibimiz tarafından randevu onayı telefon veya mesaj ile iletilir.",
       },
       {
-        title: "4. Kliniğe Gelis",
-        text: "Randevu saatinde kliniğe gelerek tedavi surecinizi baslatabilirsiniz.",
+        title: "4. Kliniğe Geliş",
+        text: "Randevu saatinde kliniğe gelerek tedavi sürecinizi başlatabilirsiniz.",
       },
     ],
-    formNote: "Form, webhook veya Google Sheets baglantisi icin hazirdir.",
+    formNote: "Form, webhook veya Google Sheets bağlantısı için hazırdır.",
     treatmentOptions: [
       "Genel Muayene",
-      "Estetik Dis Tedavisi",
-      "Cocuk Dis Hekimligi",
-      "Implant Tedavisi",
+      "Estetik Diş Tedavisi",
+      "Çocuk Diş Hekimliği",
+      "İmplant Tedavisi",
     ],
   },
   kvkk: {
     title: "KVKK",
     intro:
-      "Kisisel verileriniz, 6698 sayili Kisisel Verilerin Korunmasi Kanunu kapsaminda sadece saglik hizmeti sunumu, randevu yonetimi ve yasal yukumluluklerin yerine getirilmesi amaciyla islenmektedir.",
+      "Kişisel verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında sadece sağlık hizmeti sunumu, randevu yönetimi ve yasal yükümlülüklerin yerine getirilmesi amacıyla işlenmektedir.",
     cards: [
-      { title: "Islenen Veriler", text: "Kimlik, iletisim, saglik ve randevu bilgileri." },
-      { title: "Isleme Amaci", text: "Tani, tedavi, takip ve iletisim sureclerinin yurutilmesi." },
-      { title: "Haklariniz", text: "Bilgi talep etme, duzeltme, silme ve itiraz haklarina sahipsiniz." },
-      { title: "Basvuru", text: "kvkk@mustafavuraldis.com adresinden bize ulasabilirsiniz." },
+      { title: "İşlenen Veriler", text: "Kimlik, iletişim, sağlık ve randevu bilgileri." },
+      { title: "İşleme Amacı", text: "Tanı, tedavi, takip ve iletişim süreçlerinin yürütülmesi." },
+      { title: "Haklarınız", text: "Bilgi talep etme, düzeltme, silme ve itiraz haklarına sahipsiniz." },
+      { title: "Başvuru", text: "kvkk@mustafavuraldis.com adresinden bize ulaşabilirsiniz." },
     ],
   },
   patientrights: {
     title: "HASTA HAKLARI",
     intro:
-      "Her hastamiz, bilgilendirilme, mahremiyet, guvenli tedavi, onam verme ve tedavi surecine aktif katilim haklarina sahiptir.",
+      "Her hastamız, bilgilendirilme, mahremiyet, güvenli tedavi, onam verme ve tedavi sürecine aktif katılım haklarına sahiptir.",
     cards: [
-      { title: "Bilgilendirilme Hakki", text: "Tedavi secenekleri, sure ve maliyet konusunda acik bilgi alma hakki." },
-      { title: "Mahremiyet Hakki", text: "Muayene ve veri guvenligi sureclerinde gizlilige oncelik verilir." },
-      { title: "Onam Hakki", text: "Islem oncesi bilgilendirilmis onamla karar verme surecine katilim." },
-      { title: "Gorus ve Itiraz Hakki", text: "Geri bildirim, sikayet ve ikinci gorus taleplerinizi iletebilirsiniz." },
+      { title: "Bilgilendirilme Hakkı", text: "Tedavi seçenekleri, süre ve maliyet konusunda açık bilgi alma hakkı." },
+      { title: "Mahremiyet Hakkı", text: "Muayene ve veri güvenliği süreçlerinde gizliliğe öncelik verilir." },
+      { title: "Onam Hakkı", text: "İşlem öncesi bilgilendirilmiş onamla karar verme sürecine katılım." },
+      { title: "Görüş ve İtiraz Hakkı", text: "Geri bildirim, şikayet ve ikinci görüş taleplerinizi iletebilirsiniz." },
     ],
   },
   emergency: {
-    title: "ACIL DURUM BILGISI",
+    title: "ACİL DURUM BİLGİSİ",
     intro:
-      "Siddetli agrı, travma, kirik dis veya kanama gibi durumlarda 7/24 danisma hattimizi arayabilirsiniz.",
+      "Şiddetli ağrı, travma, kırık diş veya kanama gibi durumlarda 7/24 danışma hattımızı arayabilirsiniz.",
     cards: [
-      { title: "Hemen Arayin", text: "+90 555 555 00 00" },
+      { title: "Hemen Arayın", text: "+90 555 555 00 00" },
       { title: "Klinik Saatleri", text: "Pazartesi - Cumartesi: 09:00 - 19:00" },
-      { title: "Mesai Disi Yonlendirme", text: "Acil dis travmalarinda en yakin acil servise basvurun." },
-      { title: "On Bilgilendirme", text: "Telefonla semptomlariniz alinip uygun yonlendirme yapilir." },
+      { title: "Mesai Dışı Yönlendirme", text: "Acil diş travmalarında en yakın acil servise başvurun." },
+      { title: "Ön Bilgilendirme", text: "Telefonla semptomlarınız alınıp uygun yönlendirme yapılır." },
     ],
   },
 };

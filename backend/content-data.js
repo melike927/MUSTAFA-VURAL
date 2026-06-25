@@ -61,6 +61,7 @@ const DEFAULT_CONTENT = {
   services: {
     title: "HIZMETLER",
     slogan: "Koruyucu, estetik ve uzmanlık odaklı tüm diş hekimliği hizmetleri tek merkezde.",
+    faqTitle: "Sık Sorulan Sorular",
     intro:
       "Kliniğimizde koruyucu diş hekimliğinden estetik uygulamalara kadar geniş kapsamlı hizmetler sunulmaktadır. Amacımız, her hastamız için doğru tanı, kişiye özel planlama ve uzun vadeli ağız sağlığı sağlamaktır.",
     cards: [
