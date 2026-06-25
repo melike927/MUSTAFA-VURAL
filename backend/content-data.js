@@ -1,12 +1,12 @@
 const DEFAULT_CONTENT = {
   site: {
-    topStrip: "Acil Dis Destegi: 7/24 Danisma Hatti",
+    topStrip: "Acil Diş Desteği: 7/24 Danışma Hattı",
     phone: "+90 555 555 00 00",
     address: "Atakum / Samsun",
     email: "iletisim@mustafavuraldis.com",
     footerTitle: "MUSTAFA VURAL",
-    footerDescription: "Modern dis hekimligi yaklasimi ile guvenli ve konforlu tedavi deneyimi.",
-    footerYear: "2026 Mustafa Vural Dis Klinigi. Tum haklari saklidir.",
+    footerDescription: "Modern diş hekimliği yaklaşımı ile güvenli ve konforlu tedavi deneyimi.",
+    footerYear: "2026 Mustafa Vural Diş Kliniği. Tüm hakları saklıdır.",
   home: {
     title: "ANASAYFA",
     kicker: "MODERN DIS KLINIGI",
@@ -60,7 +60,7 @@ const DEFAULT_CONTENT = {
   },
   services: {
     title: "HIZMETLER",
-    slogan: "Koruyucu, estetik ve uzmanlik odakli tum dis hekimligi hizmetleri tek merkezde.",
+    slogan: "Koruyucu, estetik ve uzmanlık odaklı tüm diş hekimliği hizmetleri tek merkezde.",
     intro:
       "Kliniğimizde koruyucu diş hekimliğinden estetik uygulamalara kadar geniş kapsamlı hizmetler sunulmaktadır. Amacımız, her hastamız için doğru tanı, kişiye özel planlama ve uzun vadeli ağız sağlığı sağlamaktır.",
     cards: [
@@ -70,7 +70,7 @@ const DEFAULT_CONTENT = {
       { title: "Pedodonti", text: "Çocuklara özel koruyucu tedavi ve alışkanlık kazandıran takip programları." },
     ],
     faqs: [
-      { question: "Ilk muayene ne kadar surer?", answer: "Ortalama 20-30 dakika surer ve tum agiz ici durum detayli olarak degerlendirilir." },
+      { question: "İlk muayene ne kadar sürer?", answer: "Ortalama 20-30 dakika sürer ve tüm ağız içi durum detaylı olarak değerlendirilir." },
       { question: "Dis beyazlatma islemi zararli midir?", answer: "Uzman hekim kontrolunde yapildiginda dis yapisina uygun ve guvenli bir uygulamadir." },
       { question: "Cocuklar ne zaman ilk kontrola gelmeli?", answer: "Ilk dis ciktiktan sonra veya en gec 1 yas civarinda ilk muayene onerilir." },
     ],
