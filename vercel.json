@@ -1,10 +1,51 @@
 {
+  "cleanUrls": true,
   "functions": {
     "api/**/*.js": {
       "maxDuration": 10
     }
   },
   "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/hizmetler",
+      "dest": "/hizmetler.html"
+    },
+    {
+      "src": "/tedaviler",
+      "dest": "/tedaviler.html"
+    },
+    {
+      "src": "/ekibimiz",
+      "dest": "/ekibimiz.html"
+    },
+    {
+      "src": "/randevu",
+      "dest": "/randevu.html"
+    },
+    {
+      "src": "/yorumlar",
+      "dest": "/yorumlar.html"
+    },
+    {
+      "src": "/kvkk",
+      "dest": "/kvkk.html"
+    },
+    {
+      "src": "/hasta-haklari",
+      "dest": "/hasta-haklari.html"
+    },
+    {
+      "src": "/acil-durum",
+      "dest": "/acil-durum.html"
+    },
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
