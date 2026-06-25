@@ -2,6 +2,18 @@ import { kv } from "@vercel/kv";
 import { verifyToken, sendError, sendJson } from "../../auth.js";
 import { getDefaultContent, isSupportedContentPage } from "../../../content-data.js";
 
+function parseStoredContent(value) {
+  if (!value) {
+    return null;
+  }
+
+  if (typeof value === "string") {
+    return JSON.parse(value);
+  }
+
+  return value;
+}
+
 export default async function handler(req, res) {
   const { pageKey } = req.query;
 
@@ -16,7 +28,7 @@ export default async function handler(req, res) {
   if (req.method === "GET") {
     try {
       const raw = await kv.get(`content:${pageKey}`);
-      const content = raw ? JSON.parse(raw) : getDefaultContent(pageKey);
+      const content = parseStoredContent(raw) || getDefaultContent(pageKey);
 
       if (!content) {
         return sendError(res, 404, "Icerik bulunamadi");

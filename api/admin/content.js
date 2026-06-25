@@ -2,6 +2,18 @@ import { kv } from "@vercel/kv";
 import { verifyToken, sendError, sendJson } from "../auth.js";
 import { DEFAULT_CONTENT } from "../../content-data.js";
 
+function parseStoredContent(value) {
+  if (!value) {
+    return null;
+  }
+
+  if (typeof value === "string") {
+    return JSON.parse(value);
+  }
+
+  return value;
+}
+
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     return sendError(res, 405, "Method not allowed");
@@ -16,7 +28,7 @@ export default async function handler(req, res) {
     const data = {};
     for (const pageKey of Object.keys(DEFAULT_CONTENT)) {
       const raw = await kv.get(`content:${pageKey}`);
-      data[pageKey] = raw ? JSON.parse(raw) : DEFAULT_CONTENT[pageKey];
+      data[pageKey] = parseStoredContent(raw) || DEFAULT_CONTENT[pageKey];
     }
     return sendJson(res, data);
   } catch (error) {
