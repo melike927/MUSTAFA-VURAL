@@ -1,6 +1,6 @@
 const DEFAULT_CONTENT = {
   site: {
-    topStrip: "Acil Dış Desteği: 7/24 Danışma Hattı",
+    topStrip: "Acil Diş Desteği: 7/24 Danışma Hattı",
     phone: "+90 555 555 00 00",
     address: "Atakum / Samsun",
     email: "iletisim@mustafavuraldis.com",
